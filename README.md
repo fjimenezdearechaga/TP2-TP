@@ -11,12 +11,16 @@ Libro
 
 GET all
 'app/libros'
+
 GET by Id
 'app/libros/id'
+
 POST
 'app/libros'
+
 PUT
 'app/libros/id'
+
 DELETE
 'app/libros/id'
 
@@ -24,11 +28,15 @@ Ejemplar
 
 GET all
 'app/ejemplares'
+
 GET by Id
 'app/ejemplares/id'
+
 POST
 'app/ejemplares'
+
 PUT
 'app/ejemplares/id'
+
 DELETE
 'app/ejemplares/id'
