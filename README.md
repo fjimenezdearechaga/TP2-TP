@@ -6,7 +6,9 @@ Los libros tienen los campos "titulo", "autor" y "anio".
 Los ejemplares tienen los campos "editorial" y "anio".
 
 Rutas:
+
 Libro
+
 GET all
 'app/libros'
 GET by Id
@@ -19,6 +21,7 @@ DELETE
 'app/libros/id'
 
 Ejemplar
+
 GET all
 'app/ejemplares'
 GET by Id
