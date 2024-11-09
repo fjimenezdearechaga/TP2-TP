@@ -24,6 +24,9 @@ PUT
 DELETE
 'app/libros/id'
 
+
+
+
 Ejemplar
 
 GET all
