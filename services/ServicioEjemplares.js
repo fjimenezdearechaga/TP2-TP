@@ -18,7 +18,8 @@ class ServicioEjemplares{
 
     getEjemplarByIdService = async(id)=>{
         try{
-            const ejemplar = await Ejemplar.findByPk(id)
+            const ejemplar = await Ejemplar.findByPk(id,{attributes:['editorial','anio'],
+                include:[{model:Libro,attributes:['titulo','autor']}]})
             return ejemplar
         }catch(error){
             throw error;
@@ -34,7 +35,7 @@ class ServicioEjemplares{
     }
     updateEjemplarService = async(id,editorial,anio)=>{
         try{
-            const ejemplar = await Ejemplar.update({editorial,anio,LibroId},{where:{id}})
+            const ejemplar = await Ejemplar.update({editorial,anio},{where:{id}})
             return ejemplar;
         }catch(error){
             throw error;
