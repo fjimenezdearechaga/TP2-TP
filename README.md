@@ -11,14 +11,18 @@ Los ejemplares tienen los campos "editorial" y "anio".
 
 Rutas:
 
-LIBRO                                                             EJEMPLAR
+LIBRO                                                             
+GET all:'app/libros'                                              
+GET by Id:'app/libros/id'                                         
+POST:'app/libros'                                                 
+PUT:'app/libros/id'                                               
+DELETE:'app/libros/id'                                            
 
-GET all:'app/libros'                                              GET all:'app/ejemplares'
 
-GET by Id:'app/libros/id'                                         GET by Id:'app/ejemplares/id'
 
-POST:'app/libros'                                                 POST:'app/ejemplares'
-
-PUT:'app/libros/id'                                               PUT:'app/ejemplares/id'
-
-DELETE:'app/libros/id'                                            DELETE:'app/ejemplares/id'
+EJEMPLAR
+GET all:'app/ejemplares'
+GET by Id:'app/ejemplares/id'
+POST:'app/ejemplares'
+PUT:'app/ejemplares/id'
+DELETE:'app/ejemplares/id'
