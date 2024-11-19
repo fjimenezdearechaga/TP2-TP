@@ -12,6 +12,7 @@ class ControllerLibros{
             res.status(400).send({success:false,message:error.message})
         }
     }
+
     getLibroById = async(req,res)=>{
         try{
             const{id} = req.params

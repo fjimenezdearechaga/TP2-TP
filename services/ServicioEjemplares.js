@@ -1,17 +1,21 @@
 import {Ejemplar} from "../models/index.js"
+import Libro from "../models/Libro.js"
 
 class ServicioEjemplares{
 
     getAllEjemplaresService = async()=>{
         try{
             const ejemplares = await Ejemplar.findAll({
-                attributes:['editorial','anio']
+                attributes:['editorial','anio'],
+                include:[{model:Libro,attributes:['titulo','autor']}]
             })
             return ejemplares
         }catch(error){
             throw error;
         }
     }
+
+
     getEjemplarByIdService = async(id)=>{
         try{
             const ejemplar = await Ejemplar.findByPk(id)

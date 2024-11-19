@@ -3,8 +3,6 @@ import RouterLibros from './routes/routerLibros.js'
 import RouterEjemplares from './routes/RouterEjemplares.js'
 import { notFound } from './middleware/notFound.js'
 import connection from './connection/connection.js'
-import Libro from './models/Libro.js'
-import Ejemplar from './models/Ejemplar.js'
 import { SERVER_PORT } from './config/config.js'
 
 

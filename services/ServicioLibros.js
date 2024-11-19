@@ -12,6 +12,7 @@ class ServicioLibros{
             throw error;
         }
     }
+
     getLibroByIdService = async(id)=>{
         try{
             const libro = await Libro.findByPk(id)
